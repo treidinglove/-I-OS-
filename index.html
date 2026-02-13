@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PequeMente - Aprende Jugando</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>🌟 PequeMente</h1>
+    <p>Una app para niños desde los 3 años que fortalece habilidades cognitivas, motoras e inteligencia emocional.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>¿Qué aprenderán?</h2>
+      <ul>
+        <li>🎨 Reconocimiento de colores y formas</li>
+        <li>🔢 Conteo básico y lógica inicial</li>
+        <li>🧠 Memoria y atención</li>
+        <li>🤲 Coordinación motora con actividades táctiles</li>
+      </ul>
+    </section>
+
+    <section class="card game">
+      <h2>Juego 1: Cuenta las estrellas</h2>
+      <p>¿Cuántas estrellas ves aquí?</p>
+      <div id="stars" class="stars"></div>
+      <div class="controls">
+        <input id="answer" type="number" min="1" max="10" placeholder="Escribe un número" />
+        <button id="checkBtn">Comprobar</button>
+        <button id="nextBtn">Siguiente reto</button>
+      </div>
+      <p id="feedback" class="feedback"></p>
+    </section>
+
+    <section class="card game">
+      <h2>Juego 2: Encuentra el color</h2>
+      <p id="colorPrompt">Toca el color: <strong>Azul</strong></p>
+      <div id="colorGrid" class="color-grid"></div>
+      <p id="colorFeedback" class="feedback"></p>
+    </section>
+
+    <section class="card">
+      <h2>Progresión recomendada</h2>
+      <ol>
+        <li><strong>Nivel 1 (3-4 años):</strong> colores, sonidos y conteo de 1 a 5.</li>
+        <li><strong>Nivel 2 (4-5 años):</strong> memoria visual, secuencias y formas.</li>
+        <li><strong>Nivel 3 (5-6 años):</strong> retos lógicos simples y resolución de problemas.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ para aprender jugando.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
