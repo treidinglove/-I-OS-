@@ -1,0 +1,101 @@
+:root {
+  --bg: #f7fbff;
+  --primary: #4f46e5;
+  --accent: #22c55e;
+  --card: #ffffff;
+  --text: #1f2937;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #e0f2fe 0%, var(--bg) 60%);
+  color: var(--text);
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+ul, ol { padding-left: 1.2rem; }
+li { margin: 0.4rem 0; }
+
+.stars {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  min-height: 2.5rem;
+}
+
+.controls {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+input, button {
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover { opacity: 0.92; }
+
+.feedback {
+  min-height: 1.3rem;
+  font-weight: 700;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(56px, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.color-tile {
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.color-tile:focus-visible,
+.color-tile:hover {
+  border-color: #111827;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
